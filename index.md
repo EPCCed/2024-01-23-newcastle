@@ -14,7 +14,7 @@ humantime: "9:30am - 5:00pm GMT"    # human-readable times for the workshop e.g.
 startdate: 2024-01-23      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2024-01-25        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Kevin Stratford", "Rui Apostolo", "Juan Herrera"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Rui Apostolo", "Gabriel Rodriguez-Canal"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Rui Apostolo", "Kevin Stratford", "Gabriel Rodriguez-Canal"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["support@archer2.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: https://pad.archer2.ac.uk/p/240123-software-carpentry # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -55,31 +55,6 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 </div>
 {% endunless %}
 {% endif %}
-
-{% comment %}
-EVENTBRITE
-
-This block includes the Eventbrite registration widget if
-'eventbrite' has been set in the header.  You can delete it if you
-are not using Eventbrite, or leave it in, since it will not be
-displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
-{% if page.eventbrite %}
-<strong>Some adblockers block the registration window. If you do not see the
-  registration box below, please check your adblocker settings.</strong>
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="280px"
-  scrolling="auto">
-</iframe>
-{% endif %}
-
-<h2>Registration</h2>
-<p>Please use the <a href="https://www.archer2.ac.uk/training/register/?course=240123-software-carpentry">ARCHER2 course registration form</a> to sign up for the workshop.</p>
-
-<hr/>
 
 <h2 id="general">General Information</h2>
 
